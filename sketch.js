@@ -90,7 +90,12 @@ function dodecaHexSquareTiling() {
   var tiles = new DodecaHexaSquareTiling(50);
   tiles.buildGrid();
   polys = tiles.polys;
+}
 
+function penroseTiling() {
+  var tiles = new PenroseTiling(50);
+  tiles.buildGrid();
+  polys = tiles.polys;
 }
 
 function chooseTiling() {
@@ -110,6 +115,9 @@ function chooseTiling() {
     case "hexa_triangle_square":
       // dodecaHexSquareTiling();
       hexTriangleSquareTiling();
+      break;
+    case "penrose":
+      penroseTiling();
       break;
     default:
       hexTriangleSquareTiling();
